@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Home"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Website made by Edward F. Hillenaar with Quarto 2025"
+  navbar:
+    right:
+      - text: Home
+        href: index.qmd
+      
+format:
+  html:
+    backgroundcolor: "#eeffee"
+    fontcolor: "black"
+    linkcolor: "black"
+    mainfont: "sarif"
+    fontsize: 20px
+    theme: [cosmo, styles.scss]
+

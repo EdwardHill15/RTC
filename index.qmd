@@ -1,0 +1,30 @@
+---
+title: "Edward F. Hillenaar"
+subtitle: "Psychologist | Philosopher | Data Scientist"
+image: ed.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: trestles
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/feed/
+    - icon: youtube
+      text: Youtube
+      href: https://www.youtube.com/@edwardhillenaar3303
+      
+---
+
+{{< lipsum 1 >}}
+
+## **Education**
+
+University of Utrecht
+
+## **Experience** 
+
+There's a ton of text there, 
+probably way too much
