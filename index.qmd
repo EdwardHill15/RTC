@@ -18,13 +18,28 @@ about: # https://quarto.org/docs/websites/website-about.html
       
 ---
 
-{{< lipsum 1 >}}
+I am the founder and owner of Totale Gezondheid, a practice and advisory bureau dedicated to promoting holistic health and well-being. With a background in psychology, sports science, and philosophy, I combine my extensive knowledge and experience to offer curative, preventive, and performance-oriented therapy programs.
 
-## **Education**
+# Education:
+Vrije Universiteit Amsterdam: Candidate Doctor of Philosophy (PhD) in Applied Psychology. My PhD thesis, “Mindfulness-Based Body Movement Reprocessing,” is currently in progress.
 
-University of Utrecht
+University Utrecht: Movement Science (MSc, 1992) and Clinical/Healthpsychology (MSc., 1995)
 
-## **Experience** 
+# Professional Experience:
+Owner and CEO of Totale Gezondheid (2011 - Present): Specializing in EMDR, Buddhist Psychology, and integrative health practices. Writer and CEO of Total Health Foundation (2007 - Present): Focused on writing and leading the foundation.
 
-There's a ton of text there, 
-probably way too much
+# Skills:
+Mindfulness, EMDR, Buddhist Psychology, Sports and Exercise Science, Psychotherapy and Coaching
+
+# Languages:
+Dutch (native language)
+German (Professional Working Proficiency)
+English (Professional Working Proficiency)
+
+# Mission
+My mission is to help individuals achieve a balanced and fulfilling life through a combination of physical and mental health practices. Whether you are seeking therapy, coaching, or training, Totale Gezondheid is here to support you on your journey to total health.
+
+# Connect with Edward
+For more information or to schedule a consultation, visit www.totalegezondheid.nl or contact me via the contact page.
+
+Let’s embark on this journey to total health together.

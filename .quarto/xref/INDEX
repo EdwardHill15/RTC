@@ -31,5 +31,8 @@
   },
   "articles/index.qmd": {
     "index.html": "6d05ce89"
+  },
+  "contact.qmd": {
+    "contact.html": "f2e2e591"
   }
 }

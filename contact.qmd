@@ -1,0 +1,39 @@
+---
+title: "Contact"
+about:
+  template: jolla
+format: 
+  html:
+    css: "contact.css"
+---
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Mail me</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="06b8edd5-b593-46dd-a30b-113d5e98d2bc">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Send <img src="arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="Ed.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+```
+
