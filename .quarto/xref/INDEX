@@ -1,5 +1,35 @@
 {
   "index.qmd": {
     "index.html": "d0f21ce8"
+  },
+  "talks.qmd": {
+    "talks.html": "f24dd77f"
+  },
+  "blog/Blog.qmd": {
+    "Blog.html": "dbb3f74e"
+  },
+  "blog/index.qmd": {
+    "index.html": "165970cd"
+  },
+  "blog/third-post/index.qmd": {
+    "index.html": "c0c305f3"
+  },
+  "blog/Resonance Consciousness/index.qmd": {
+    "index.html": "6356235a"
+  },
+  "blog/first-post/index.qmd": {
+    "index.html": "d126dd9d"
+  },
+  "blog/second-post/index.qmd": {
+    "index.html": "d5ffe66a"
+  },
+  "projects/index.qmd": {
+    "index.html": "efd2a25a"
+  },
+  "articles/Resonance Consciousness/index.qmd": {
+    "index.html": "d30b69d9"
+  },
+  "articles/index.qmd": {
+    "index.html": "6d05ce89"
   }
 }

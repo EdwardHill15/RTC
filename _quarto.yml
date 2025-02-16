@@ -6,9 +6,17 @@ website:
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   page-footer: "Website made by Edward F. Hillenaar with Quarto 2025"
   navbar:
+    title: Edward F. Hillenaar
     right:
-      - text: Home
-        href: index.qmd
+      - href: talks.qmd
+        text: Talks
+      - href: blog/index.qmd
+        text: Blog
+      - href: articles
+        text: Article
+    tools:
+      - icon: github
+        href: https://github.com/EdwardHill15/RTC
       
 format:
   html:
