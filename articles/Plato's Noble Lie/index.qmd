@@ -3,26 +3,10 @@ title: "Plato’s Noble Lie: A Tool for Social and Philosophical Transformation"
 date: last-modified
 author:
   - name: Edward F. Hillenaar
-#     acknowledgements: | 
-#       The authors gratefully acknowledge _please remember to list all relevant funding sources in the non-anonymized (unblinded) version_.
-#     affiliations:
-#       - name: Total Health Foundation
-#         department: Philosophy | Psychology | Research
-# abstract: |
-#   The text of your abstract. 200 or fewer words.
-# keywords:
-#   - 3 to 6 keywords
-#   - that do not appear in the title
-#editor: 
-  #markdown: 
-    #wrap: sentence
-format: 
-  html:
-    theme: darkly
-    css: styles.scss
-#editor: visual
-# execute: 
-#   echo: true
+# format: 
+#   html:
+#     theme: darkly
+#     css: styles.scss
 bibliography: noble_lie.bib
 nocite: |
   @*
