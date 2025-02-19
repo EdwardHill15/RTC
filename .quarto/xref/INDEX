@@ -40,5 +40,14 @@
   },
   "articles/Understanding/index.qmd": {
     "index.html": "785b8e43"
+  },
+  "articles/Resonance Model of Consciousness/index.qmd": {
+    "index.html": "8fc9b209"
+  },
+  "articles/Resonance Model of Consciousness/index2.qmd": {
+    "index2.html": "6962a24e"
+  },
+  "articles/Resonance Model of Consciousness/quarto-anim.qmd": {
+    "quarto-anim.html": "6da77337"
   }
 }
