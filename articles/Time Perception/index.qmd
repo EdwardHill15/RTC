@@ -351,13 +351,13 @@ ggplot(summary_data, aes(x = ActualTime, y = PerceivedTime, color = Condition)) 
   theme_minimal()
 ```
 
-# **Discussion**:
+# **Discussion**
 
 The simulations presented here provide a theoretical framework for understanding the complex interplay of factors influencing time perception. The Arrhenius equation simulation highlights the potential role of physiological factors, such as metabolic rate, in shaping our subjective experience of time (Figure 1). The amphetamine simulation demonstrates how pharmacological agents affecting dopamine systems can alter temporal estimation (Figure 2). The LSD simulation supports findings that even microdoses can influence time perception, potentially via serotonin system modulation [@Yanakieva2019] (Figure 4). The ANOVA statistics can be observed in figure 3.
 
 Limitations of this study include its reliance on simulated data and simplified models. Future research should focus on empirically validating these findings in human participants and exploring the underlying neural mechanisms involved in these effects. Further work should examine the REBUS model further [@Carhart-Harris2019].
 
-# **Conclusion**:
+# **Conclusion**
 
 This in silico study suggests that time perception is a dynamic process influenced by temperature, metabolic rate, and pharmacological agents. While these simulations provide valuable insights, empirical research is crucial for validating these findings and further elucidating the neural mechanisms underlying subjective time experience.
 
