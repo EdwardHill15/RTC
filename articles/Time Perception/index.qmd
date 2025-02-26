@@ -1,0 +1,364 @@
+---
+title: "Simulated Effects of Temperature, Amphetamine, and LSD on Time Perception: An In Silico Investigation"
+date: last-modified
+author:
+  - name: Edward F. Hillenaar
+#     acknowledgements: | 
+#       The authors gratefully acknowledge _please remember to list all relevant funding sources in the non-anonymized (unblinded) version_.
+#     affiliations:
+#       - name: Total Health Foundation
+#         department: Philosophy | Psychology | Research
+# abstract: |
+#   The text of your abstract. 200 or fewer words.
+# keywords:
+#   - 3 to 6 keywords
+#   - that do not appear in the title
+#editor: 
+  #markdown: 
+    #wrap: sentence
+format: 
+  html:
+    theme: darkly
+    css: styles.css
+#editor: visual
+# execute: 
+#   echo: true
+bibliography: time.bib
+nocite: |
+  @*
+---
+![Source: Image created by Edward F. Hillenaar with https://www.canva.com/ai-image-generator/](time.png){fig-align="center"}
+
+## **Abstract**
+
+This study utilizes computational simulations to investigate the effects of temperature, amphetamine, and LSD on time perception. The Arrhenius equation models the influence of temperature on metabolic rate and perceived time. Simulated experiments explore amphetamine's effects on subjective time estimation and LSD's impact across varying microdoses. Results suggest complex interactions between physiological factors, pharmacological agents, and the subjective experience of time. The findings offer a theoretical framework for understanding altered time perception and emphasize the need for empirical validation.
+
+***Keywords***: Time Perception, Arrhenius Equation, Amphetamine, LSD, Simulation, Temperature, Metabolic Rate
+
+## **Introduction**
+
+Time perception is a complex cognitive process influenced by a variety of factors, including physiological state, pharmacological agents, and environmental conditions [@Wittmann2007]. This study employs computational modeling to explore several potential influences on time perception, specifically focusing on the effects of temperature (as mediated through metabolic rate), amphetamine, and LSD. Simulations offer a valuable tool for generating testable hypotheses and exploring complex interactions in a controlled environment.
+
+## **Methods**
+
+### ***Arrhenius Equation Simulation***:
+
+```{r}
+#| label: load-packages
+#| message: false
+#| include: false
+library(tidyverse)
+library(ggstatsplot)
+library(ggforce)
+library(report)
+library(effectsize)
+```
+
+```{r}
+#| label: Arrhenius
+#| code-fold: true
+# Define constants
+A <- 1e12  # Pre-exponential factor (arbitrary units)
+R <- 8.314  # Universal gas constant (J/(mol·K))
+Ea <- 50000  # Activation energy (J/mol)
+
+# Function to calculate reaction rate based on Arrhenius equation
+arrhenius_rate <- function(T) {
+  A * exp(-Ea / (R * T))
+}
+
+# Function to simulate perceived time based on metabolic rate
+perceived_time <- function(actual_time, metabolic_rate) {
+  actual_time / metabolic_rate
+}
+
+# Generate data
+temperatures <- seq(273, 313, by = 1)  # 0°C to 40°C in Kelvin
+metabolic_rates <- arrhenius_rate(temperatures)
+actual_time <- 60  # 60 seconds
+
+# Calculate perceived time for each temperature
+perceived_times <- perceived_time(actual_time, metabolic_rates / max(metabolic_rates))
+
+# Create a data frame
+data <- data.frame(
+  Temperature = temperatures - 273,  # Convert to Celsius for plotting
+  Metabolic_Rate = metabolic_rates,
+  Perceived_Time = perceived_times
+)
+```
+
+The Arrhenius equation was used to model the effect of temperature on metabolic rate and, subsequently, on perceived time. A range of temperatures (0-40°C) was simulated. Perceived time was modeled as inversely proportional to the normalized metabolic rate.
+
+In this model:
+
+-   As temperature increases, metabolic rate increases (following the Arrhenius equation).
+
+-   Perceived time is modeled as inversely proportional to metabolic rate (faster metabolism = slower perceived time passage).
+
+The resulting plot will show how metabolic rate increases with temperature, while perceived time for a fixed actual time decreases. This illustrates the concept that higher temperatures could lead to faster metabolic processes, potentially making time seem to pass more slowly.
+
+Note that this is a simplified model and real biological systems are much more complex. The actual relationship between temperature, metabolic rate, and time perception in humans is not fully understood and would involve many more factors.
+
+### ***Amphetamine Experiment Simulation***:
+
+A simulated experiment was conducted with two conditions: Placebo and Amphetamine. Sixty simulated subjects were divided equally between the two conditions. Participants "estimated" time intervals of 2, 4, 6, 8, and 10 seconds, with five trials per interval. Amphetamine was modeled as increasing perceived duration (drug_effect = 1.2), and a small increase in variability was included (noise_level = 0.6).
+
+This simulation provides a framework for understanding how amphetamines might affect time perception, but it's important to note that real-world effects can be more complex and vary based on dosage, individual differences, and specific experimental conditions.
+
+```{r}
+#| label: amphetamine
+#| code-fold: true
+#| warning: false
+#| include: false
+
+# Set seed for reproducibility
+set.seed(123)
+
+# Function to simulate time perception
+simulate_time_perception <- function(actual_time, drug_effect, noise) {
+  perceived_time <- actual_time * drug_effect + rnorm(1, mean = 0, sd = noise)
+  return(max(perceived_time, 0))  # Ensure non-negative time
+}
+
+# Experiment parameters
+n_subjects <- 60  # Total number of subjects
+actual_times <- c(2, 4, 6, 8, 10)  # Actual time intervals to estimate in seconds
+trials_per_time <- 5  # Number of trials for each time interval
+
+# Drug conditions
+conditions <- c("Placebo", "Amphetamine")
+drug_effects <- c(1, 1.2)  # Amphetamine increases perceived duration
+noise_levels <- c(0.5, 0.6)  # Slightly increased variability with amphetamine
+
+# Simulate experiment
+simulate_condition <- function(n, effect, noise) {
+  results <- data.frame()
+  for (subject in 1:n) {
+    for (time in actual_times) {
+      for (trial in 1:trials_per_time) {
+        perceived <- simulate_time_perception(time, effect, noise)
+        results <- rbind(results, data.frame(Subject = subject, 
+                                             ActualTime = time, 
+                                             PerceivedTime = perceived))
+      }
+    }
+  }
+  return(results)
+}
+
+all_data <- data.frame()
+for (i in 1:length(conditions)) {
+  condition_data <- simulate_condition(n_subjects/2, drug_effects[i], noise_levels[i])
+  condition_data$Condition <- conditions[i]
+  all_data <- rbind(all_data, condition_data)
+}
+
+# Calculate mean perceived time for each actual time and condition
+summary_data <- aggregate(PerceivedTime ~ ActualTime + Condition, data = all_data, FUN = mean)
+
+# Perform statistical analysis
+model <- lm(PerceivedTime ~ ActualTime * Condition, data = all_data)
+summary(model)
+```
+
+```{r}
+#| code-fold: true
+#| warning: false
+#| include: false
+p <- ggbetweenstats(
+  data = all_data,
+  x = Condition,
+  y = PerceivedTime,
+  ggstatsplot.layer = FALSE,
+  ggplot.component = list(theme(text = element_text(size = 15))),
+  type = "parametric",
+  pvalue.method = "Fwelch", # Specify the p-value method
+  pvalue.label = "Fwelch", # Specify the label for the p-value
+  ggsignif.args = list(textsize = 5, tip_length = 0.01),
+  stats.label.args = list(size = 5)
+) +
+  geom_boxplot(alpha = 0.3, colour = "grey0", aes(fill = Condition)) +
+  geom_violin(alpha = 0.1) +
+  geom_sina(alpha = 0.9, size = 2, aes(color = Condition)) +
+  stat_summary(fun.data = mean_cl_boot, geom = "point",
+               color = "blue", size = 7) +
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar",
+               color = "blue", size = 1, width = 0.4) +
+  theme(legend.position = "bottom") +
+  scale_fill_brewer(palette = "Blues") +
+  labs(title = "Plot ANOVA Statistics for differences in Perceived and Metric Time",
+       y = "",
+       x = "",
+       fill = "Condition") 
+```
+
+### ***LSD Experiment Simulation***:
+
+A simulated experiment was conducted with four conditions: Placebo, LSD 5ug, LSD 10ug, and LSD 20ug. Sixty simulated subjects were divided equally among the four conditions. Participants "estimated" time intervals of 0.8, 1.6, 2, 3, and 4 seconds, with five trials per interval. LSD was modeled as increasing perceived duration in a dose-dependent manner (drug_effects = c(1, 1.05, 1.1, 1.15)), with a corresponding increase in variability (noise_levels = c(0.1, 0.12, 0.15, 0.18)).
+
+```{r}
+#| label: LSD
+#| code-fold: true
+#| warning: false
+# Set seed for reproducibility
+set.seed(123)
+
+# Set seed for reproducibility
+set.seed(123)
+
+# Function to simulate time perception
+simulate_time_perception <- function(actual_time, drug_effect, noise) {
+  perceived_time <- actual_time * drug_effect + rnorm(1, mean = 0, sd = noise)
+  return(max(perceived_time, 0))  # Ensure non-negative time
+}
+
+# Experiment parameters
+n_subjects <- 60  # Total number of subjects
+actual_times <- c(0.8, 1.6, 2, 3, 4)  # Actual time intervals to estimate in seconds
+trials_per_time <- 5  # Number of trials for each time interval
+
+# LSD conditions
+conditions <- c("Placebo", "LSD_5ug", "LSD_10ug", "LSD_20ug")
+drug_effects <- c(1, 1.05, 1.1, 1.15)  # Increasing effect with dose
+noise_levels <- c(0.1, 0.12, 0.15, 0.18)  # Increasing variability with dose
+
+# Simulate experiment
+simulate_condition <- function(n, effect, noise) {
+  results <- data.frame()
+  for (subject in 1:n) {
+    for (time in actual_times) {
+      for (trial in 1:trials_per_time) {
+        perceived <- simulate_time_perception(time, effect, noise)
+        results <- rbind(results, data.frame(Subject = subject, 
+                                             ActualTime = time, 
+                                             PerceivedTime = perceived))
+      }
+    }
+  }
+  return(results)
+}
+
+all_data <- data.frame()
+for (i in 1:length(conditions)) {
+  condition_data <- simulate_condition(n_subjects/4, drug_effects[i], noise_levels[i])
+  condition_data$Condition <- conditions[i]
+  all_data <- rbind(all_data, condition_data)
+}
+
+# Calculate mean perceived time for each actual time and condition
+summary_data <- aggregate(PerceivedTime ~ ActualTime + Condition, data = all_data, FUN = mean)
+```
+
+## Analysis
+
+For the Arrhenius equation simulation, a plot was generated to visualize the relationship between temperature, metabolic rate, and perceived time (Figure 1). For the amphetamine and LSD experiments, summary statistics were calculated, and plots were generated to compare perceived time across conditions (Figures 2 and 4). ANOVA analyses were performed to statistically evaluate the differences between groups using the `R ggstatsplot package`(Figure 3).
+
+## **Results**
+
+***Arrhenius Equation Simulation***:
+
+The simulation demonstrated an inverse relationship between temperature and perceived time. As temperature increased, the simulated metabolic rate increased, and perceived time decreased, representing a subjective speeding up of time (Figure 1).
+
+```{r}
+#| label: fig-arrhenius-equation
+#| fig-alt: | 
+#|  Plot of the Arrhenius Equation.
+#| fig-cap: |
+#|  Plot of the Arrhenius Equation showing the relationship between temperature, metabolic rate, and perceived time.
+#| code-fold: true
+#| warning: false
+
+ggplot(data, aes(x = Temperature)) +
+  geom_line(aes(y = Metabolic_Rate / max(Metabolic_Rate), color = "Normalized Metabolic Rate")) +
+  geom_line(aes(y = Perceived_Time / max(Perceived_Time), color = "Normalized Perceived Time")) +
+  labs(title = "Effect of Temperature on Metabolic Rate and Time Perception",
+       x = "Temperature (°C)",
+       y = "Normalized Value",
+       color = "Measure") +
+  theme_minimal() +
+  scale_color_manual(values = c("Normalized Metabolic Rate" = "blue", "Normalized Perceived Time" = "red"))
+```
+
+***Amphetamine Experiment Simulation***:
+
+The amphetamine condition resulted in a systematic overestimation of time intervals compared to the placebo condition (Figure 2). Statistical analysis revealed a significant effect of amphetamine on perceived time (Figure 3).
+
+```{r}
+#| label: fig-amphetamine-time
+#| fig-alt: | 
+#|  Simulated Experiment Amphetamine and Time Perception.
+#| fig-cap: |
+#|  Results Plot of a simulated experiment of the effect of usage Amphetamine on time perception.
+#| code-fold: true
+#| warning: false
+
+# Plot results
+ggplot(summary_data, aes(x = ActualTime, y = PerceivedTime, color = Condition)) +
+  geom_point() +
+  geom_line() +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed") +
+  labs(title = "Effect of Amphetamine on Time Perception",
+       x = "Actual Time (seconds)",
+       y = "Perceived Time (seconds)") +
+  theme_minimal()
+```
+
+```{r}
+#| code-fold: true
+#| warning: false
+#| label: fig-ANOVA-amphetamine
+#| fig-alt: | 
+#|  ANOVA statistics for Perceived and Metric Time.
+#| fig-cap: |
+#|  ANOVA statistics for Perceived and Metric Time.
+ 
+print(p)
+```
+
+```{r}
+#| label: anova-experiment
+#| code-fold: true
+#| warning: false
+#| include: false
+
+interpret_hedges_g(0.38)
+
+amphetamine_effect <- aov(PerceivedTime ~ Condition, data = all_data)
+report(amphetamine_effect)
+```
+
+***LSD Experiment Simulation***:
+
+The LSD simulation demonstrated a dose-dependent effect on perceived time. As the LSD dose increased, the perceived time increased, indicating a subjective slowing down of time (Figure 4).
+
+```{r}
+#| label: fig-LSD-time
+#| fig-alt: | 
+#|  Simulated Experiment LSD and Time Perception.
+#| fig-cap: |
+#|  Simulated Experiment LSD and Time Perception.
+#| code-fold: true
+#| warning: false
+
+ggplot(summary_data, aes(x = ActualTime, y = PerceivedTime, color = Condition)) +
+  geom_point() +
+  geom_line() +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed") +
+  labs(title = "Effect of LSD Microdoses on Time Perception",
+       x = "Actual Time (seconds)",
+       y = "Perceived Time (seconds)") +
+  theme_minimal()
+```
+
+## **Discussion**:
+
+The simulations presented here provide a theoretical framework for understanding the complex interplay of factors influencing time perception. The Arrhenius equation simulation highlights the potential role of physiological factors, such as metabolic rate, in shaping our subjective experience of time (Figure 1). The amphetamine simulation demonstrates how pharmacological agents affecting dopamine systems can alter temporal estimation (Figure 2). The LSD simulation supports findings that even microdoses can influence time perception, potentially via serotonin system modulation [@Yanakieva2019] (Figure 4). The ANOVA statistics can be observed in figure 3.
+
+Limitations of this study include its reliance on simulated data and simplified models. Future research should focus on empirically validating these findings in human participants and exploring the underlying neural mechanisms involved in these effects. Further work should examine the REBUS model further [@Carhart-Harris2019].
+
+# **Conclusion**:
+
+This in silico study suggests that time perception is a dynamic process influenced by temperature, metabolic rate, and pharmacological agents. While these simulations provide valuable insights, empirical research is crucial for validating these findings and further elucidating the neural mechanisms underlying subjective time experience.
+
+# References
