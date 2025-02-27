@@ -8,7 +8,7 @@ about: # https://quarto.org/docs/websites/website-about.html
   links:
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/EdwardHill15/RTC
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/feed/
