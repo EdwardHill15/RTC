@@ -110,7 +110,6 @@ This simulation provides a framework for understanding how amphetamines might af
 #| label: amphetamine
 #| code-fold: true
 #| warning: false
-#| include: false
 
 # Set seed for reproducibility
 set.seed(123)
@@ -154,12 +153,12 @@ for (i in 1:length(conditions)) {
   all_data <- rbind(all_data, condition_data)
 }
 
-# Calculate mean perceived time for each actual time and condition
-summary_data <- aggregate(PerceivedTime ~ ActualTime + Condition, data = all_data, FUN = mean)
-
-# Perform statistical analysis
-model <- lm(PerceivedTime ~ ActualTime * Condition, data = all_data)
-summary(model)
+# # Calculate mean perceived time for each actual time and condition
+# summary_data <- aggregate(PerceivedTime ~ ActualTime + Condition, data = all_data, FUN = mean)
+# 
+# # Perform statistical analysis
+# model <- lm(PerceivedTime ~ ActualTime * Condition, data = all_data)
+# summary(model)
 ```
 
 ```{r}
