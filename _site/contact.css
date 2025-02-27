@@ -24,13 +24,13 @@
 
 .contact-left-title h2 {
   font-weight: 600;
-  color: #3D0C02;
+  color: Darkgreen;
   font-size: 40px;
   margin-bottom: 5px;
 }
 
 .contact-inputs {
-  background-color: lightblue;
+  background-color: #E4FDE1;
   width: 400px;
   height: 50px;
   border: none;
@@ -42,14 +42,14 @@
 }
 
 .contact-left textarea {
-  background-color: lightblue;
+  background-color: #E4FDE1;
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
 }
 
 .contact-inputs:focus {
-  border: 2px solid Darkblue;
+  border: 2px solid white;
 }
 
 .contact-inputs::placeholder {
@@ -61,11 +61,11 @@
   align-items: center;
   padding: 15px 30px;
   font-size: 16px;
-  color: #fff;
+  color: white;
   gap: 10px;
   border: none;
   border-radius: 50px;
-  background-color: #E8FAEA;
+  background: linear-gradient(270deg,lightgreen, green);
   cursor: pointer;
 }
 
