@@ -1,0 +1,64 @@
+---
+title: "Alfred North Whitehead's Blind Spot"
+subtitle: "A Critique of Whitehead's Fallacy of Misplaced Concreteness and the Misplaced Abstractness of Metaphysical Thought"
+date: last-modified
+author:
+  - name: Edward F. Hillenaar
+#     acknowledgements: | 
+#       The authors gratefully acknowledge _please remember to list all relevant funding sources in the non-anonymized (unblinded) version_.
+#     affiliations:
+#       - name: Total Health Foundation
+#         department: Philosophy | Psychology | Research
+# abstract: |
+#   The text of your abstract. 200 or fewer words.
+# keywords:
+#   - 3 to 6 keywords
+#   - that do not appear in the title
+#editor: 
+  #markdown: 
+    #wrap: sentence
+format: 
+  html:
+    theme: darkly
+    css: styles.scss
+#editor: visual
+# execute: 
+#   echo: true
+---
+
+![](blindspot2.png)
+
+## **Challenging Whitehead’s Notion**
+Alfred North Whitehead’s concept of the Fallacy of Misplaced Concreteness suggests that treating abstract concepts as tangible realities leads to errors in reasoning. However, this interpretation is not fully adequate. The process of perceiving objects as concrete and static forms is essential for human cognition and agency.
+
+## **The Role of Perception in Cognitive Function**
+The Resonance Theory of Consciousness (RTC) posits that perception is a transformation of an ever-changing vibrational field into seemingly concrete objects. This transformation is not a cognitive error but a necessary adaptation. The mind perceives objects as stable forms to enable effective interaction with the environment. This ability allows humans to navigate, manipulate, and exert control over their surroundings, ensuring survival, exploration, and creativity.
+
+## **Concrete Perception as a Cognitive Necessity**
+Had the human mind not developed the ability to perceive an inherently dynamic world as composed of distinct, steady objects, effective behavior would be impossible. Concrete perception is not a fallacy but a creative virtue. It enables strategic decision making and action in a world that, at its core, remains a continuous vibrational flux.
+
+## **Reframing the Fallacy: Misplaced Abstractness**
+A cognitive error only arises if the faculty of understanding mistakes the perceived concreteness of objects for their ontological nature. Naïve realism, for example, assumes that the objects we perceive exist independently as static entities, rather than as mental constructs shaped by perception. This misjudgment leads to a false ontology—the belief that reality itself is composed of distinct, immutable objects rather than an ever-changing vibrational field.
+
+Instead of calling this a Fallacy of Misplaced Concreteness, it would be more accurate to describe it as a Fallacy of Misplaced Abstractness. The real error is not in perceiving objects as concrete but in failing to recognize that this perception is a cognitive strategy rather than an ultimate truth about reality. Misplacing abstract concepts—such as the notion that objects inherently exist as distinct entities—leads to flawed deductions about the nature of existence.
+
+## **The Fallacy of Misplaced Abstractness in Philosophy of Mind**
+This fundamental error extends beyond naive realism and affects the three dominant meta-physical positions in Western philosophy of mind: materialism, dualism, and idealism. Each of these philosophical frameworks falls prey to the Fallacy of Misplaced Abstractness, thereby failing to grasp the true nature of reality.
+
+1.	Materialism assumes that prima materia—the physical substance—is the fundamental reality. It treats the physical world as the ultimate ontological basis, overlooking the possibility that matter itself is a derivative manifestation of a deeper vibrational field.
+
+2.	Dualism asserts that mind and body are two distinct substances, treating both as onto-logically separate. This assumption misplaces abstraction by presuming an inherent division in reality that may not exist.
+
+3.	Idealism places the mind itself as the ultimate ontological reality, disregarding the interconnected and dynamic nature of existence beyond mere cognition.
+
+Each of these positions makes a crucial reasoning error by abstracting a particular aspect of experience—matter, duality, or mind—and treating it as ontologically primary. By doing so, they fail to understand the fluid, vibrational, and dynamic nature of existence, which trans-cends such rigid classifications.
+
+## **The Explanatory Gap and the Hard Problem of Consciousness**
+Because materialism, dualism, and idealism are all built on the Fallacy of Misplaced Abstractness, they inevitably create an Explanatory Gap—the inability to bridge the divide between subjective experience and objective description. This gap is at the heart of David Chalmers' Hard Problem of Consciousness, which questions how and why subjective experience arises from physical processes.
+
+By misplacing abstraction and assigning ontological primacy to particular conceptual frameworks, these philosophies lock themselves into an unsolvable paradox. None of them can adequately explain consciousness because they fail to account for the deeper, interconnected vibrational nature of reality. Thus, as long as the Fallacy of Misplaced Abstractness persists in metaphysical thought, the Hard Problem of Consciousness remains an insurmountable challenge.
+
+## **Conclusion: Moving Beyond Misplaced Abstractness**
+Whitehead’s claim that misplaced concreteness is a fallacy overlooks the crucial function of perception in human cognition. The transformation of a dynamic vibrational reality into concrete objects is not an error but an essential feature of the mind’s capacity for control, agency, and creativity. A true fallacy occurs only when one assumes that this perceived concreteness reflects the fundamental nature of reality itself.
+
+Furthermore, the dominant metaphysical positions in philosophy of mind all fall into the deeper Fallacy of Misplaced Abstractness. By treating matter, duality, or mind as ontologically primary, they create an artificial explanatory gap that prevents any true resolution of the mystery of consciousness. Only by recognizing and transcending this error can philosophy and science move toward a more accurate understanding of reality and the nature of conscious experience.
