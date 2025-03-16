@@ -44,7 +44,7 @@ Heraclitus emphasized the interconnection between fire and psyche, suggesting th
 
 Plato, rather than discarding this view, adapted it through his doctrine of forms. While material reality is always in flux, the forms provide a stabilizing principle that allows the mind to make sense of the world. In this way, Plato’s project can be seen as an attempt to harmonize the Heraclitean view of reality with the need for knowledge and intelligibility. According to Jorjani (2023), Plato’s real philosophical allegiance was to Heraclitus, and the doctrine of forms was not an outright rejection of flux but a necessary tool to bridge the gap between the rational mind and the mutable world.
 
-Werner Heisenberg, one of the pioneers of quantum mechanics, saw a parallel between Heraclitus' vision of reality and the quantum world. The notion that reality exists in a state of potentiality until observed aligns with Heraclitus' idea that existence is a continuous process rather than a static entity. In quantum mechanics, particles exist in a superposition of states until measured, akin to Heraclitus' fire, which embodies the perpetual transformation of all things (Heisenberg, 1958). Plato’s mediation of this flux through the theory of forms is reminiscent of how scientific models allow us to make sense of an otherwise indeterminate quantum world.
+Werner Heisenberg, one of the pioneers of quantum mechanics, saw a parallel between Heraclitus' vision of reality and the quantum world. The notion that reality exists in a state of potentiality until observed aligns with Heraclitus' idea that existence is a continuous process rather than a static entity. In quantum mechanics, particles exist in a superposition of states until measured, akin to Heraclitus' fire, which embodies the perpetual transformation of all things (Heisenberg, 1958, p.28). Plato’s mediation of this flux through the theory of forms is reminiscent of how scientific models allow us to make sense of an otherwise indeterminate quantum world.
 
 ## **Heraclitus as a Precursor to Quantum Potential and Plato’s Hidden Philosophy**
 
@@ -58,6 +58,6 @@ Heraclitus’ philosophy of fire, psyche, and logos provides a profound precurso
 
 # **References**
 
-Heisenberg, W. (1958). Physics and Philosophy: The Revolution in Modern Science. Harper & Brothers.
+Heisenberg, W. (1989). Physics and Philosophy: The Revolution in Modern Science. Penquin Books.
 
-Jorjani, J. R. (2023). Plato’s Terrifying Secret Doctrines [YouTube lecture]. Retrieved from https://www.youtube.com/watch?v=lBRebPG_NK4
+Jorjani, J. R. (2023). [Plato's Terrifying Secret Doctrines | Jason Reza Jorjani](https://www.youtube.com/watch?v=lBRebPG_NK4)
