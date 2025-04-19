@@ -26,6 +26,6 @@ format:
 #   echo: true
 ---
 
-![](python_notebook.png)
----
-[View the Python Notebook Data Visualization of the NVM_SCL Study](python_notebook_study.html)
+## ![](python_notebook.png)
+
+[View the Python Notebook Data Visualization of the NVM_SCL Study](python_nvm.html)
