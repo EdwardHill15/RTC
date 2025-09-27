@@ -1,0 +1,29 @@
+[
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/first-post/index.html",
+      "/blog/second-post/index.html",
+      "/blog/third-post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": []
+  },
+  {
+    "listing": "/articles/index.html",
+    "items": [
+      "/articles/Misplaced Abstractness/index.html",
+      "/articles/Heraclitus'Fire/index.html",
+      "/articles/Nash beautiful mind re-evalueted/index.html",
+      "/articles/Plato's Noble Lie/index.html",
+      "/articles/RTC and Blindsight/index.html",
+      "/articles/Time Perception/index.html",
+      "/articles/Bhagavad Gita/index.html",
+      "/articles/Understanding/index.html",
+      "/articles/Promethean path to liberation/index.html",
+      "/articles/Resonance Consciousness/index.html"
+    ]
+  }
+]
