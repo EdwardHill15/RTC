@@ -73,5 +73,14 @@
   },
   "articles/Python Notebook NVM_SCL study/index.qmd": {
     "index.html": "24404ec1"
+  },
+  "articles/Bloch Sphere Cosnciousness/holograpic_bloch.qmd": {
+    "holograpic_bloch.html": "c7d9e13f"
+  },
+  "articles/Bloch Sphere Cosnciousness/index.qmd": {
+    "index.html": "fa13bd19"
+  },
+  "articles/Bloch Sphere Cosnciousness/Quantum computing Superposition.qmd": {
+    "Quantum computing Superposition.html": "66567423"
   }
 }
