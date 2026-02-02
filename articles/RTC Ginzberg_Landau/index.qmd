@@ -20,7 +20,7 @@ execute:
   freeze: true
 ---
 
-![rtc_combined_phase_evolution.png](rtc_combined_phase_evolution.png)
+![rtc_combined_phase_evolution.png](consciousness_evolution.png)
 
 # RTC Phase Diagram: From Chaos to Consciousness {.unnumbered}
 
