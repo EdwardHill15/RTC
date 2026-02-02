@@ -21,7 +21,7 @@ nocite: |
   @*
 ---
 
-![](atlas.png)
+![](cover.png)
 
 # Introduction to RTC Atlas
 
