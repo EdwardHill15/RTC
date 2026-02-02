@@ -19,7 +19,7 @@ execute:
   message: false
 ---
 
-![](rtc_temporal.png)
+![](atlas.png)
 
 # Introduction to RTC Atlas
 
