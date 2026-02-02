@@ -18,7 +18,7 @@ execute:
   warning: false
   message: false
 ---
-![Picture of RTC Atlas of Resonance Theory of Consciousness](atlas.png)
+![atlas Consciousness](atlas.png)
 <!-- ```{css} -->
 <!-- /* styles.css - Light Blue Theme Overrides */ -->
 <!-- body { -->
