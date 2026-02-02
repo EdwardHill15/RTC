@@ -1,0 +1,33 @@
+/* Light Blue Enhancements */
+body {
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.quarto-title {
+  background: linear-gradient(45deg, #0D47A1, #1976D2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.level1 h1, .quarto-section-heading {
+  color: #0D47A1 !important;
+  border-bottom: 3px solid #BBDEFB;
+  padding-bottom: 0.5rem;
+}
+
+.cell {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(33, 150, 243, 0.15);
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #2196F3;
+}
+
+pre, code {
+  background: linear-gradient(90deg, #F5FBFF, #E8F5FF) !important;
+  border-radius: 8px;
+  border-left: 4px solid #42A5F5;
+}
