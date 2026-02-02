@@ -82,5 +82,9 @@
   },
   "articles/Bloch Sphere Cosnciousness/Quantum computing Superposition.qmd": {
     "Quantum computing Superposition.html": "66567423"
+  },
+  "articles/RTC Ginzberg_Landau/index.qmd": {
+    "index.html": "78844609",
+    "index.tex": "c84b645d"
   }
 }
