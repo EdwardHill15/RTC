@@ -22,7 +22,8 @@ website:
       
 format:
   html:
-    backgroundcolor: "#E8FAEA"
+    backgroundcolor: "#f2f8fb"
+    #backgroundcolor: "#E8FAEA"
     fontcolor: "black"
     linkcolor: "black"
     mainfont: "sarif"
