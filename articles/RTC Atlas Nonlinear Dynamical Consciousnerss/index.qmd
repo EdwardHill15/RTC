@@ -9,7 +9,6 @@ format:
     toc-depth: 4
     theme: cosmo
     code-fold: true
-    embed-resources: true
     fig-width: 10
     fig-height: 6
 execute: 
@@ -21,7 +20,7 @@ nocite: |
   @*
 ---
 
-![](cover.png)
+![cover picture](cover.png){.preview-image}
 
 # Introduction to RTC Atlas
 
