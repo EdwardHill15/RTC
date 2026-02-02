@@ -1,5 +1,5 @@
 ---
-title: "RTC Atlas - Resonance Theory of Consciousness"
+title: "RTC Atlas of Resonance Theory of Consciousness"
 author: "Edward F. Hillenaar"
 date: last-modified
 format: 
@@ -18,33 +18,8 @@ execute:
   warning: false
   message: false
 ---
-![atlas Consciousness](atlas.png)
-<!-- ```{css} -->
-<!-- /* styles.css - Light Blue Theme Overrides */ -->
-<!-- body { -->
-<!--   background-color: #E3F2FD !important;  /* Light blue background */ -->
-<!--   color: #1a1a1a;                       /* Dark text for contrast */ -->
-<!-- } -->
 
-<!-- .quarto-title-banner { -->
-<!--   background-color: #BBDEFB;             /* Slightly darker title banner */ -->
-<!--   color: #0D47A1;                       /* Deep blue title text */ -->
-<!-- } -->
-
-<!-- .content { -->
-<!--   background-color: rgba(227, 242, 253, 0.95);  /* Semi-transparent light blue */ -->
-<!--   backdrop-filter: blur(10px); -->
-<!--   border-radius: 12px; -->
-<!--   padding: 2rem; -->
-<!--   margin: 2rem auto; -->
-<!--   max-width: 1200px; -->
-<!--   box-shadow: 0 8px 32px rgba(33, 150, 243, 0.2); -->
-<!-- } -->
-
-<!-- .quarto-container { -->
-<!--   background-color: transparent !important; -->
-<!-- } -->
-<!-- ``` -->
+![](atlas.png)
 
 # Introduction to RTC Atlas
 
