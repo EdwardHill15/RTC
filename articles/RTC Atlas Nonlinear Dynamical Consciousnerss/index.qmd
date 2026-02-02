@@ -5,6 +5,9 @@ author:
   - name: Edward F. Hillenaar
 format: 
   html:
+    toc: true
+    toc-depth: 4
+    code-fold: true
     theme: darkly
     css: styles.css
 bibliography: nonlinear.bib

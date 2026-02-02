@@ -4,6 +4,9 @@ author: "Edward F. Hillenaar, Independent PhD Researcher"
 date: "2026-02-02"
 format: 
   html:
+    toc: true
+    toc-depth: 4
+    code-fold: true
     theme: darkly
     css: styles.css
 bibliography: nonlinear.bib
