@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Edward F. Hillenaar">
+<meta name="dcterms.date" content="2026-06-16">
+<meta name="keywords" content="3 to 6 keywords, that do not appear in the title">
+
+<title>Venn Diagrams of RTC – Home</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6ec1a171dc9cdab1af8171a17633f53f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Venn Diagrams of RTC – Home">
+<meta property="og:description" content="The text of your abstract. 200 or fewer words.">
+<meta property="og:image" content="index_files/figure-html/unnamed-chunk-2-1.png">
+<meta property="og:site_name" content="Home">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Edward F. Hillenaar</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks.html"> 
+<span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../articles/index.html"> 
+<span class="menu-text">Article</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/EdwardHill15" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Venn Diagrams of RTC</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Edward F. Hillenaar </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Total Health Foundation
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 16, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>The text of your abstract. 200 or fewer words.</p>
+  </div>
+</div>
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>3 to 6 keywords, that do not appear in the title</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="step-1-load-required-packages" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-load-required-packages">Step 1: Load Required Packages</h2>
+</section>
+<section id="step-2-define-the-sets-in-rtc" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-define-the-sets-in-rtc">Step 2: Define the Sets in RTC</h2>
+<p>We define:</p>
+<ul>
+<li>Experience (<span class="math inline">\(E\)</span>): The fundamental integral of consciousness.</li>
+<li>Perception (<span class="math inline">\(P\)</span>): The derivative of experience.</li>
+<li>Time (<span class="math inline">\(T\)</span>): The rate of change of perception.</li>
+</ul>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define RTC sets using set theory notation</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Experience <span class="ot">&lt;-</span> <span class="fu">set</span>(<span class="st">"E1"</span>, <span class="st">"E2"</span>, <span class="st">"E3"</span>, <span class="st">"E4"</span>)  <span class="co"># Elements of pure experience</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Perception <span class="ot">&lt;-</span> <span class="fu">set</span>(<span class="st">"P1"</span>, <span class="st">"P2"</span>, <span class="st">"P3"</span>, <span class="st">"P4"</span>)  <span class="co"># Perception states</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Time <span class="ot">&lt;-</span> <span class="fu">set</span>(<span class="st">"T1"</span>, <span class="st">"T2"</span>, <span class="st">"T3"</span>, <span class="st">"T4"</span>)        <span class="co"># Time moments as changes in perception</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Define their intersections</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>EP <span class="ot">&lt;-</span> <span class="fu">set_intersection</span>(Experience, Perception)  <span class="co"># Overlap of experience &amp; perception</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>PT <span class="ot">&lt;-</span> <span class="fu">set_intersection</span>(Perception, Time)        <span class="co"># Overlap of perception &amp; time</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ET <span class="ot">&lt;-</span> <span class="fu">set_intersection</span>(Experience, Time)        <span class="co"># Overlap of experience &amp; time</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="step-3-visualize-rtc-with-a-venn-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-visualize-rtc-with-a-venn-diagram">Step 3: Visualize RTC with a Venn Diagram</h2>
+<p>Now, we create a Venn diagram to illustrate how these sets interact.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a Venn diagram of Experience, Perception, and Time</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>venn.plot <span class="ot">&lt;-</span> <span class="fu">draw.triple.venn</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">area1 =</span> <span class="dv">4</span>, <span class="at">area2 =</span> <span class="dv">4</span>, <span class="at">area3 =</span> <span class="dv">4</span>,        <span class="co"># Sizes of each set</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n12 =</span> <span class="dv">2</span>, <span class="at">n23 =</span> <span class="dv">2</span>, <span class="at">n13 =</span> <span class="dv">2</span>,              <span class="co"># Intersections (Experience-Perception, Perception-Time, Experience-Time)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">n123 =</span> <span class="dv">1</span>,                               <span class="co"># Intersection of all three (Unified Consciousness)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">category =</span> <span class="fu">c</span>(<span class="st">"Experience (E)"</span>, <span class="st">"Perception (P)"</span>, <span class="st">"Time (T)"</span>),  </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"lightblue"</span>, <span class="st">"gray"</span>),       </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.5</span>,                            <span class="co"># Transparency for overlapping visualization</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">cat.cex =</span> <span class="fl">1.2</span>,                          <span class="co"># Font size for labels</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">cat.col =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"lightblue"</span>,<span class="st">"gray"</span>),    </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex =</span> <span class="fl">1.5</span>,                              <span class="co"># Font size of numbers</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">lty =</span> <span class="st">"dashed"</span>                          <span class="co"># Dashed outline for clarity</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the Venn Diagram to a file</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="st">"RTC_VennDiagram.pdf"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.draw</span>(venn.plot)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>png 
+  2 </code></pre>
+</div>
+</div>
+</section>
+<section id="step-4-explanation-of-the-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-explanation-of-the-diagram">Step 4: Explanation of the Diagram</h2>
+<ol type="1">
+<li>Experience (<span class="math inline">\(E\)</span>) in Blue – Represents the integral of consciousness.</li>
+<li>Perception (<span class="math inline">\(P\)</span>) in Lightblue – Represents the derivative of experience.</li>
+<li>Time (<span class="math inline">\(T\)</span>) in Gray – Represents the rate of change of perception.</li>
+<li>Overlap Regions: <span class="math inline">\(E\)</span> ∩ <span class="math inline">\(P\)</span> (Blue &amp; Lightblue): Perception emerges from experience. <span class="math inline">\(P\)</span> ∩ <span class="math inline">\(T\)</span> (Lightblue &amp; Gray): Perception defines the experience of time. <span class="math inline">\(E\)</span> ∩ <span class="math inline">\(T\)</span> (Blue &amp; Gray): Time is embedded in the unfolding of experience. <span class="math inline">\(E\)</span>∩ <span class="math inline">\(P\)</span> ∩ <span class="math inline">\(T\)</span> (Center, all colors overlap): Unified field of consciousness.</li>
+</ol>
+<section id="next-steps" class="level3">
+<h3 class="anchored" data-anchor-id="next-steps"><strong>Next Steps</strong></h3>
+<ul>
+<li><p>You can <strong>modify set sizes</strong> or <strong>adjust intersections</strong> based on your RTC data.</p></li>
+<li><p>Try <strong><code>eulerr</code></strong> instead of <code>VennDiagram</code> for a more accurate representation of overlapping sets:</p></li>
+</ul>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("eulerr")</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(eulerr)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">euler</span>(<span class="fu">c</span>(<span class="at">Experience =</span> <span class="dv">4</span>, <span class="at">Perception =</span> <span class="dv">4</span>, <span class="at">Time =</span> <span class="dv">4</span>, <span class="st">"Experience&amp;Perception"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Perception&amp;Time"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Experience&amp;Time"</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="st">"Experience&amp;Perception&amp;Time"</span> <span class="ot">=</span> <span class="dv">1</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="understanding-the-overlapping-sections-in-the-venn-diagram-of-rtc" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-overlapping-sections-in-the-venn-diagram-of-rtc">Understanding the Overlapping Sections in the Venn Diagram of RTC</h2>
+<p>In the Resonance Theory of Consciousness (RTC), we model the relationship between Experience (<span class="math inline">\(E\)</span>), Perception (<span class="math inline">\(P\)</span>), and Time (<span class="math inline">\(T\)</span>) using a Venn diagram. Each of these sets represents a fundamental aspect of consciousness. The overlapping sections between them indicate interdependencies that describe how consciousness unfolds dynamically.</p>
+<ol type="1">
+<li><strong>Meaning of the Overlapping Section: Experience ∩ Perception (</strong><span class="math inline">\(E\)</span> ∩ <span class="math inline">\(P\)</span>)</li>
+</ol>
+<p>This overlap represents how perception emerges from experience.</p>
+<p>Mathematical Representation:</p>
+<p><span class="math display">\[P(t) = \frac{d}{dt}E(t)\]</span></p>
+<p>This equation states that perception (<span class="math inline">\(P\)</span>) is the derivative of experience (<span class="math inline">\(E\)</span>) over time.</p>
+<p>Conceptual Meaning:</p>
+<ul>
+<li><p>Experience (<span class="math inline">\(E\)</span>) is the fundamental fabric of consciousness, the raw field of awareness before interpretation.</p></li>
+<li><p>Perception (<span class="math inline">\(P\)</span>) is the processed form of experience, where the brain assigns meaning to raw sensory data.</p></li>
+<li><p>The overlap (<span class="math inline">\(E\)</span> ∩ <span class="math inline">\(P\)</span>) represents the moment when raw experience is being interpreted as perception.</p></li>
+<li><p>This aligns with the idea that consciousness is not static but a continuous modulation of experience into perception.</p></li>
+</ul>
+<p>Example in Consciousness: Imagine hearing a musical note. The raw sound wave hitting your eardrum belongs to the Experience Set (<span class="math inline">\(E\)</span>). When your brain recognizes the note as a specific pitch (e.g., “A4 at 440 Hz”), that recognition belongs to the Perception Set (<span class="math inline">\(P\)</span>). The overlap (<span class="math inline">\(E\)</span> ∩ <span class="math inline">\(P\)</span>) is the moment when the sound transitions from a raw stimulus to a recognized perception.</p>
+<ol start="2" type="1">
+<li><strong>Meaning of the Overlapping Section: Perception ∩ Time (</strong><span class="math inline">\(P\)</span> ∩ <span class="math inline">\(T\)</span>)</li>
+</ol>
+<p>This overlap represents how time is embedded within perception.</p>
+<p>Mathematical Representation:</p>
+<p><span class="math display">\[T = \frac{d}{dt}P(t)\]</span></p>
+<p>This equation states that time (<span class="math inline">\(T\)</span>) is the rate of change of perception (<span class="math inline">\(P\)</span>).</p>
+<p>Conceptual Meaning:</p>
+<ul>
+<li><p>Time (<span class="math inline">\(T\)</span>) is not independent but emerges from the rate at which perceptions change.</p></li>
+<li><p>The overlap (<span class="math inline">\(P\)</span> ∩ <span class="math inline">\(T\)</span>) represents the continuous updating of perception over time.</p></li>
+<li><p>Without change in perception, the experience of time would cease to exist. This suggests that time, as we perceive it, is a byproduct of shifting perception states.</p></li>
+</ul>
+<p>Example in Consciousness: Consider watching a sunset. If your perception remains static, you do not perceive the sun moving. However, because your perception continuously updates, you observe the sun’s gradual descent. This perceptual change is what gives rise to your experience of time.</p>
+<ol start="3" type="1">
+<li><strong>Meaning of the Overlapping Section: Experience ∩ Time (</strong><span class="math inline">\(E\)</span> <strong>∩</strong> <span class="math inline">\(T\)</span><strong>) This overlap represents how experience unfolds over time.</strong></li>
+</ol>
+<p>Mathematical Representation:</p>
+<p><span class="math display">\[E(t) = B(t) \times F(t) \]</span></p>
+<p>where:</p>
+<ul>
+<li><p><span class="math inline">\(𝐵\)</span>(𝑡) is the brain’s wave modulation.</p></li>
+<li><p><span class="math inline">\(𝐹\)</span>(𝑡) is the holographic field of actual occasions.</p></li>
+<li><p><span class="math inline">\(𝐸\)</span>(𝑡) represents experience as a product of brain activity and the external vibrational field.</p></li>
+</ul>
+<p>Conceptual Meaning:</p>
+<ul>
+<li>Experience (<span class="math inline">\(E\)</span>) is not static; it is constantly evolving within a temporal framework.</li>
+<li>The overlap (<span class="math inline">\(E\)</span> ∩ <span class="math inline">\(T\)</span>) represents the temporal nature of raw experience—meaning experience itself is time-dependent.</li>
+<li>Experience does not exist outside of time, as it is always unfolding moment-to-moment.</li>
+</ul>
+<p>Example in Consciousness: When you recall a past event, the act of remembering is an experience (<span class="math inline">\(E\)</span>) that occurs in the present moment (<span class="math inline">\(T\)</span>). The overlap (<span class="math inline">\(E\)</span> ∩ <span class="math inline">\(T\)</span>) captures this interplay—past experiences are reactivated in present time.</p>
+<ol start="4" type="1">
+<li><strong>Meaning of the Central Overlap: Experience ∩ Perception ∩ Time (</strong><span class="math inline">\(E\)</span> ∩ <span class="math inline">\(P\)</span> ∩ <span class="math inline">\(T\)</span>)</li>
+</ol>
+<p>This central intersection represents the unified field of consciousness.</p>
+<p>Mathematical Representation:</p>
+<p><span class="math display">\[P(t) = \frac{d}{dt}(E(t) \times f_{mod}(t))\]</span></p>
+<p>where:</p>
+<ul>
+<li><p><span class="math inline">\(f_{mod}(t)\)</span> represents frequency modulation, capturing how experience changes over time.</p></li>
+<li><p>This equation shows that perception is shaped both by experience and by its modulation in time.</p></li>
+</ul>
+<p>Conceptual Meaning:</p>
+<ul>
+<li>Experience (<span class="math inline">\(E\)</span>), Perception (<span class="math inline">\(P\)</span>), and Time (<span class="math inline">\(T\)</span>) are inseparable.</li>
+<li>Consciousness is not a static entity; it exists as a flowing interaction between these three elements.</li>
+<li>The central overlap represents the real-time emergence of conscious awareness—how raw experience is processed into perception within the flow of time.</li>
+</ul>
+<p>Example in Consciousness: Consider playing a musical instrument. The raw vibrations of the instrument belong to the Experience Set (<span class="math inline">\(E\)</span>). Your brain processes and understands these vibrations as notes and melodies (Perception Set, <span class="math inline">\(P\)</span>). The fact that the melody unfolds over time (Time Set, <span class="math inline">\(T\)</span>) links all three elements. The center overlap is your real-time conscious experience of making music.</p>
+<p><strong>Final Insights</strong></p>
+<ul>
+<li>RTC eliminates the need for a separate “Time Set” because time is embedded within perception.</li>
+<li>The overlapping regions in the Venn diagram describe how consciousness dynamically unfolds through the transformation of experience into perception within time.</li>
+<li>The central intersection (<span class="math inline">\(E\)</span> ∩ <span class="math inline">\(P\)</span> ∩ <span class="math inline">\(T\)</span>) is the “resonant field of consciousness”, where the brain’s wave modulation interacts with the holographic field, shaping our subjective reality.</li>
+</ul>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Freiwald2014" class="csl-entry" role="listitem">
+Freiwald, Ronald C. 2014. <em><span class="nocase">Introduction to Set Theory and Topology</span></em>. Saint Louis: Washington University. <a href="https://doi.org/10.2307/3613583">https://doi.org/10.2307/3613583</a>.
+</div>
+<div id="ref-Halmos1974" class="csl-entry" role="listitem">
+Halmos, Paul R. 1974. <em><span>Maive Set Theory</span></em>. New York: Springer.
+</div>
+<div id="ref-Jaimungal2024" class="csl-entry" role="listitem">
+Jaimungal, Curt. 2024. <span>“<span>Fay Dowker: Causal Set Theory, Quantum Gravity, Consciousness, Non-Locality, Stephen Hawking</span>.”</span> <a href="https://www.youtube.com/watch?v=PgYHEPCLVas">https://www.youtube.com/watch?v=PgYHEPCLVas</a>.
+</div>
+<div id="ref-Jech1978" class="csl-entry" role="listitem">
+Jech, Thomas. 1978. <em><span>Set Theory</span></em>. New York: Academic Press.
+</div>
+<div id="ref-Kunen1992" class="csl-entry" role="listitem">
+Kunen, Kenneth. 1992. <em><span class="nocase">Set Theory: An introduction to independence proofs</span></em>. Amsterdam: Elsevier Science Publishers B.V.
+</div>
+<div id="ref-Millspaugh2018" class="csl-entry" role="listitem">
+Millspaugh, Richard P. 2018. <span>“<span>Elementary Set Theory</span>.”</span> <em>Open Educational Resources</em>, no. 7. <a href="https://doi.org/10.31356/oers007">https://doi.org/10.31356/oers007</a>.
+</div>
+<div id="ref-Rahim2014" class="csl-entry" role="listitem">
+Rahim, Farighon Abdul. 2014. <span>“<span class="nocase">Axioms of Set Theory and Equivalents of Axiom of Choice</span>.”</span>
+</div>
+<div id="ref-Tornquist2023" class="csl-entry" role="listitem">
+Törnquist, Asger, and Jens Mammen. 2023. <span>“<span class="nocase">Set Theory and A Model of the Mind in Psychology</span>.”</span> <em>Review of Symbolic Logic</em> 16 (4): 1233–59. <a href="https://doi.org/10.1017/S1755020322000107">https://doi.org/10.1017/S1755020322000107</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Website made by Edward F. Hillenaar with Quarto 2025</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
