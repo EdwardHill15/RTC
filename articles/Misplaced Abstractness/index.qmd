@@ -26,7 +26,7 @@ format:
 #   echo: true
 ---
 
-![](blindspot2.png)
+![](blindspot.png)
 
 ## **Challenging Whitehead’s Notion**
 
