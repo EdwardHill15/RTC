@@ -19,7 +19,7 @@ author:
 format: 
   html:
     theme: darkly
-    css: styles.css
+    css: styles.scss
 #editor: visual
 # execute: 
 #   echo: true
