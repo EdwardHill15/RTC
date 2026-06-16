@@ -4,5 +4,5 @@ listing: default
 format: 
   html:
     theme: darkly
-    css: styles.css
+    css: styles.scss
 ---
