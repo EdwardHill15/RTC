@@ -1,0 +1,126 @@
+---
+title: "RTC and Buddha's Insight in the Anattalakkhana Sutta"
+date: last-modified
+author:
+  - name: Edward F. Hillenaar
+    acknowledgements: | 
+      The authors gratefully acknowledge _please remember to list all relevant funding sources in the non-anonymized (unblinded) version_.
+    affiliations:
+      - name: Total Health Foundation
+        department: Philosophy | Psychology | Research
+abstract: |
+  The text of your abstract. 200 or fewer words.
+keywords:
+  - 3 to 6 keywords
+  - that do not appear in the title
+#editor: 
+  #markdown: 
+    #wrap: sentence
+format: 
+  html:
+    css: styles.css
+#editor: visual
+# execute: 
+#   echo: true
+bibliography: hylemorphism.bib
+nocite: |
+  @*
+---
+
+![](buddha_anatta.jpg)
+
+Western philosophy, particularly Aristotelian hylomorphism [@aristotle4thdeanima; @aquinas1265summa], has traditionally conceptualized reality as a composition of matter (**hylē**) and form (**morphē**). This perspective has profoundly influenced the philosophy of mind, shaping both materialist and idealist frameworks that struggle to resolve the **Hard Problem of Consciousness** [@chalmers1995a] and the nature of **self-consciousness**.
+
+However, the **Buddha**, over **2500 years ago**, already recognized the flawed nature of this metaphysical framework. This insight is encapsulated in his statement:
+
+*"Rūpaṁ, bhikkhave, anattā."* (*"Material form, monks, is not-self."*)[@Bodhi2000; @Sayadaw2013]
+
+This profound declaration challenges the assumption that **matter (rūpa)** is essential or foundational to selfhood. It aligns with the **Resonance Theory of Consciousness (RTC)**, which argues that the perception of 'matter' is **derivative**, not fundamental. Rather than positing matter or form as the ultimate reality, **RTC proposes that integral wave-patterns of prima experientia constitute the fundamental fabric of consciousness and reality**.
+
+This essay explores how Buddhist insights on **anattā** (*non-self*) expose the **metaphysical flaws of hylomorphism**, reinforcing RTC as a more coherent alternative to conventional Western philosophy of mind.
+
+## 1. Hylomorphism and the Western Misclassification of Reality
+
+Aristotelian **hylomorphism** asserts that all things are composed of:
+
+- **Hylē (matter):** The underlying physical substance.
+
+- **Morphē (form):** The organizational principle shaping matter.
+
+Within this framework, the **mind-body problem** emerges as a division between **material composition** and **immaterial cognition**. The fundamental issue with this view is the **assumption that matter (prima materia) is the metaphysical foundation of being and experience**.
+
+Contemporary **materialist philosophy of mind**—from **Descartes' mechanical philosophy** to **modern neuroscience**—inherits this **misclassification**, leading to the persistent **Hard Problem of Consciousness**: *How does subjective experience arise from non-experiential matter?*
+
+### Buddhist Rejection of Materiality as a Basis for Self
+
+In the **Anattalakkhaṁa Sutta**, the **Buddha rejects the notion that material form (rūpa) is essential to selfhood**:
+
+- **Material qualities (rūpakkhandha) are impermanent** and lack intrinsic selfhood.
+
+- The **sense faculties (eye, ear, nose, tongue, body, and consciousness base) create the illusion of a stable self**.
+
+- When **material perception ceases, the illusion of self disappears**, just as a wooden statue—lacking sensory bases—is never mistaken for a living being.
+
+The **Buddha’s critique undermines the hylomorphic assumption that material form is essential**. Instead, perception and cognition are impermanent and interdependent, making the notion of an intrinsic self—based on material composition—untenable.
+
+## 2. RTC’s Reconstruction: Matter as a Derivative Perception, Not an Essence
+
+RTC aligns with the Buddhist **rejection of material selfhood**, advancing a **resonance-based framework** where:
+
+- **Matter is not fundamental** but a **static imprint in consciousness**, derived from deeper **resonance dynamics of experience**.
+
+- The **four prima experientia** (*inertia, cohesion, radiation, vibration*) form the **integral wave-patterns of reality**.
+
+- The **human mind mistakenly perceives** these **resonance patterns as discrete material phenomena** due to cognitive imprinting mechanisms.
+
+Thus, in RTC, the **hylomorphic model is flawed** because:
+
+- **Matter (hylē) is not ontologically basic** but a **derivative perceptual construct**.
+
+- **Form (morphē) is not an intrinsic structuring principle** but a **cognitive categorization** imposed on dynamic experiential patterns.
+
+- **Consciousness is not an emergent property of material processes** but an **intrinsic resonance phenomenon of prima experientia**.
+
+### Buddhist Anattā as an RTC Principle
+
+The Buddha’s teaching that **rūpa is not-self** aligns with RTC:
+
+- Matter is an **illusion of static cognition**, just as the **Buddha refutes the intrinsic nature of rūpa**.
+
+- The **self is a transient phenomenon** arising from **experiential wave-patterns**, rather than a **fixed material entity**.
+
+- The **illusion of selfhood collapses** when one perceives the **impermanence of material formations**, mirroring how **RTC dissolves the illusion of 'matter' as fundamental**.
+
+## 3. The Hard Problem of Consciousness and Its Resolution in RTC
+
+### Why Western Philosophy Fails
+
+Western philosophy of mind, rooted in **hylomorphism**, struggles to account for **qualia and subjectivity**, leading to:
+
+- **Materialism:** Reducing **consciousness** to **neural activity**, failing to explain subjective experience.
+
+- **Dualism:** Positing a **separate mental substance**, creating an **unsolvable interaction problem**.
+
+- **Panpsychism:** Assigning **proto-consciousness** to all matter but **lacking a structured model of selfhood**.
+
+### RTC’s Solution: Consciousness as a Resonance Dynamic
+
+RTC dissolves the **Hard Problem** by replacing **hylomorphic assumptions** with a **resonance-based ontology**, where:
+
+- **Consciousness is not 'inside' the brain** but an emergent **resonance feedback loop** of **prima experientia**.
+
+- **The self is an impermanent resonance pattern**, fluctuating with **sensory and cognitive interactions**.
+
+- **Matter and form are cognitive imprints**, just as the **Buddha states that rūpa is impermanent**.
+
+By **shifting from a substance-based view** (hylomorphism) to a **process-based resonance model**, RTC resolves the conceptual errors of **both Western and traditional Indian metaphysics**.
+
+## 4. Conclusion: Towards a Coherent Metaphysical Model of Consciousness
+
+The **Buddha’s insight in the Anattalakkhaṁa Sutta**—that **rūpa is not-self**—prefigures the **RTC critique of Western philosophy**. While **Aristotle and his intellectual descendants** mistakenly **elevated matter and form as fundamental**, the **Buddha correctly identified** the **impermanence of form and the illusion of selfhood**.
+
+RTC provides a **rigorous metaphysical model** that aligns with this **Buddhist insight**, resolving the **Hard Problem of Consciousness** by recognizing **prima experientia as the true foundation of experience**. By **rejecting hylomorphism**, RTC offers a **more accurate framework for understanding self-consciousness, perception, and reality itself**.
+
+Thus, **by integrating RTC with Buddhist philosophy**, we establish a **non-dual, resonance-based model** that dissolves the flawed distinctions imposed by Western metaphysics and paves the way for a **radically new understanding of consciousness and selfhood**.
+
+# References
